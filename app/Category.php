@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Address extends Model
+class Category extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -12,13 +12,12 @@ class Address extends Model
      * @var array
      */
     protected $fillable = [
-        'area',
-        'city',
-        'zip',
+        'name',
+        'type'
     ];
 
-    public function user()
+    public function products()
     {
-        return $this->belongsTo('App\User','id','address_id');
+    	return $this->hasMany('App\Product', 'id', 'category_id');
     }
 }

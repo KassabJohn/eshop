@@ -17,19 +17,19 @@
     <div id="top-header">
         <div class="container">
             <ul class="nav justify-content-end">
-                @if(session()->has('user'))
+                @if(session()->has('User'))
                     <li class="nav-item">
-                        <a style="color:black" href="{{route('user.history')}}">{{session()->get('user')->full_name}} </a>
+                        <a style="color:black" href="{{route('User.history')}}">{{session()->get('User')->full_name}} </a>
                     </li>
                     <li class="nav-item">
-                        <a style="color:black" href="{{route('user.logout')}}"><i class="fa fa-user-o"></i> Logout</a>
+                        <a style="color:black" href="{{route('User.logout')}}"><i class="fa fa-user-o"></i> Logout</a>
                     </li>
                 @else
                     <li class="nav-item">
-                        <a style="color:black" href="{{route('user.login')}}"><i class="fa fa-user-o"></i> Login</a>
+                        <a style="color:black" href="{{route('User.login')}}"><i class="fa fa-user-o"></i> Login</a>
                     </li>
                     <li class="nav-item">
-                        <a style="color:black" href="{{route('user.signup')}}"><i class="fa fa-user-o"></i> SignUp</a>
+                        <a style="color:black" href="{{route('User.signup')}}"><i class="fa fa-user-o"></i> SignUp</a>
                     </li>
                 @endif
 
@@ -41,7 +41,7 @@
     <div class="container">
         <div id="responsive-nav">
             <ul class="main-nav nav navbar-nav">
-                <li class="{{Route::is('user.home') ? 'active' : ''}}"><a href="{{route('user.home')}}">Home</a></li>
+                <li class="{{Route::is('User.home') ? 'active' : ''}}"><a href="{{route('User.home')}}">Home</a></li>
 
             </ul>
         </div>

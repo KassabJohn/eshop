@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/login', 'loginController@userIndex')->name('user.login');
+Route::get('/login', 'loginController@userIndex')->name('User.login');
 Route::post('/login', 'loginController@userPosted');
-Route::get('/signup', 'signupController@userIndex')->name('user.signup');
+Route::get('/signup', 'signupController@userIndex')->name('User.signup');
 Route::post('/signup', 'signupController@userPosted');
-Route::post('/check_email', 'signupController@emailCheck')->name('user.signup.check_email');
-Route::get('/logout', 'loginController@userLogout')->name('user.logout');
-Route::get('/history', 'user\userController@history')->name('user.history');
+Route::post('/check_email', 'signupController@emailCheck')->name('User.signup.check_email');
+Route::get('/logout', 'loginController@userLogout')->name('User.logout');
+Route::get('/history', 'User\userController@history')->name('User.history');
