@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/signup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,19 +152,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-ecommerce-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\eshop\resources\views\User" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\laragon\www\eshop\resources\views\store" />
       <recent name="C:\laragon\www\eshop\database\migrations" />
       <recent name="C:\laragon\www\eshop\app\Http\Controllers\user" />
       <recent name="C:\laragon\www\eshop\app" />
       <recent name="C:\laragon\www\eshop\app\Http" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\eshop\resources\views\User" />
     </key>
   </component>
   <component name="RunManager">
@@ -181,7 +183,8 @@
       <updated>1610397726432</updated>
       <workItem from="1610397728212" duration="2135000" />
       <workItem from="1610480960556" duration="2406000" />
-      <workItem from="1610557719319" duration="625000" />
+      <workItem from="1610557719319" duration="931000" />
+      <workItem from="1610636302409" duration="184000" />
     </task>
     <servers />
   </component>
@@ -205,9 +208,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610557737257" />
-    <state x="478" y="150" width="579" height="534" key="find.popup" timestamp="1610483080556">
+    <state x="794" y="279" width="579" height="534" key="find.popup" timestamp="1610558641974">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="478" y="150" width="579" height="534" key="find.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610483080556" />
+    <state x="794" y="279" width="579" height="534" key="find.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610558641974" />
   </component>
 </project>

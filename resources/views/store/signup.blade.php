@@ -41,12 +41,7 @@
                         <input class="input" type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
                     </div>
                     <br>
-
                         <input type="submit"  name="signup" class="primary-btn order-submit" value="Sign Up">
-
-
-
-
                 </div>
             </div>
         </form>

@@ -10,8 +10,6 @@
 
 </head>
 
-
-
 <body>
 <header>
     <div id="top-header">
