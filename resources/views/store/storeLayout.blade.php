@@ -4,53 +4,77 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ESHOP</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
+    <title>Eshop</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <header>
-    <div id="top-header">
-        <div class="container">
-            <ul class="nav justify-content-end">
-                @if(session()->has('User'))
-                    <li class="nav-item">
-                        <a style="color:black" href="{{route('User.history')}}">{{session()->get('User')->full_name}} </a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color:black" href="{{route('User.logout')}}"><i class="fa fa-user-o"></i> Logout</a>
-                    </li>
-                @else
-                    <li class="nav-item">
-                        <a style="color:black" href="{{route('User.login')}}"><i class="fa fa-user-o"></i> Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a style="color:black" href="{{route('User.signup')}}"><i class="fa fa-user-o"></i> SignUp</a>
-                    </li>
-                @endif
+    <table class="table table-sm">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="{{route('user.home')}}">ESHOP</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
 
-            </ul>
+                    @if(session()->has('user'))
+                        <ul class="navbar-nav">
+                            <li class="nav-item active ml-auto">
+                                <a class="navbar-brand" href="{{route('user.history')}}">{{session()->get('user')->full_name}}👥</a>
+                            </li>
+                            <li class="nav-item ml-auto">
+                                <a class="navbar-brand" href="{{route('user.logout')}}">Logout</a>
+                            </li>
+                            <li class="nav-item ml-auto">
+                                <a class="navbar-brand" id="custom_shopping_cart" href="{{route('user.cart')}}">Your Cart 🛒</a>
+                            </li>
+                        </ul>
+                    @else
+                        <ul class="navbar-nav">
+                            <li class="nav-item active ml-auto" >
+                                <a class="navbar-brand" href="{{route('user.login')}}">Login</a>
+                            </li>
+                            <li class="nav-item ml-auto" >
+                                <a class="navbar-brand" href="{{route('user.signup')}}">SignUp</a>
+                            </li>
+                        </ul>
+                    @endif
+
+                </div>
+
+
+                <form class="d-flex" style="display: inline-block; margin-left: 5%" action="{{route('user.search')}}" method="get">
+                    <input class="form-control me-2" name="n" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </nav>
         </div>
-    </div>
+    </table>
 </header>
-<nav id="navigation">
-    <div class="container">
-        <div id="responsive-nav">
-            <ul class="main-nav nav navbar-nav">
-                <li class="{{Route::is('User.home') ? 'active' : ''}}"><a href="{{route('User.home')}}">Home</a></li>
 
-            </ul>
-        </div>
-    </div>
-</nav>
+<ul class="list-group list-group-horizontal">
+    @if(Route::is('user.search'))
+        @foreach($cat as $c)
+            <li class="list-group-item"><a href="{{route('user.search.cat',['id'=>$c->id])}}" >{{$c->name}}</a></li>
+        @endforeach
+    @else
+        @foreach($cat as $c)
+            <li class="list-group-item"><a href="{{route('user.search.cat',['id'=>$c->id])}}" >{{$c->name}}</a></li>
+        @endforeach
+        <li class="list-group-item"><a href="{{route('user.search')}}">Browse All</a></li>
+    @endif
+
+</ul>
+
+
 
 @yield('content')
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-<script src="{{asset('js/jquery.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
 
 
 </body>
