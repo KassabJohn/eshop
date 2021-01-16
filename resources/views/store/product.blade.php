@@ -38,7 +38,6 @@
                                     <input type="radio" name="color"  value="{{$c}}">
                                     <div style="height:25px;width:25px;margin:5px;display:inline-block;background-color: {{$c}}"></div>
                                     @endforeach
-                                    </small>
                                     <br>
                                     <button type="submit" name="myButton" id="myButton" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
                                     <small class="text-muted">

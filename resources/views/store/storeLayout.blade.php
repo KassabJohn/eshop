@@ -11,19 +11,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-
+<style>
+    a { text-decoration: none; }
+</style>
 <body>
 <header>
     <table class="table table-sm">
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="{{route('user.home')}}">ESHOP</a>
+                <div class="col-sm-1">
+                    <a class="navbar-brand" href="{{route('user.home')}}">  &nbsp&nbsp&nbspESHOP</a>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarNav">
 
                     @if(session()->has('user'))
                         <ul class="navbar-nav">
                             <li class="nav-item active ml-auto">
-                                <a class="navbar-brand" href="{{route('user.history')}}">{{session()->get('user')->full_name}}👥</a>
+                                <a class="navbar-brand" href="{{route('user.history')}}">{{session()->get('user')->full_name}}🎮</a>
                             </li>
                             <li class="nav-item ml-auto">
                                 <a class="navbar-brand" href="{{route('user.logout')}}">Logout</a>
@@ -44,8 +48,6 @@
                     @endif
 
                 </div>
-
-
                 <form class="d-flex" style="display: inline-block; margin-left: 5%" action="{{route('user.search')}}" method="get">
                     <input class="form-control me-2" name="n" type="search" placeholder="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -54,7 +56,6 @@
         </div>
     </table>
 </header>
-
 <ul class="list-group list-group-horizontal">
     @if(Route::is('user.search'))
         @foreach($cat as $c)
@@ -68,15 +69,7 @@
     @endif
 
 </ul>
-
-
-
 @yield('content')
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
-
-
 </body>
-
 </html>
