@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/signupController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/store/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/signup.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +191,7 @@
       <workItem from="1610810657628" duration="9000" />
       <workItem from="1610812921759" duration="184000" />
       <workItem from="1610890770177" duration="15000" />
-      <workItem from="1610891154430" duration="814000" />
+      <workItem from="1610891154430" duration="1237000" />
     </task>
     <servers />
   </component>
