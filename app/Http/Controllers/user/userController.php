@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers\user;
+use App\sale;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\orderRequest;
@@ -88,6 +89,40 @@ class userController extends Controller
             Session::put('cart',$total);
         }
         return redirect()->route('user.home');
+    }
+
+    public function history(Request $r)
+    {
+        $res1= sale::where('user_id', session('user')->id)->get();
+        if(!$res1)
+        {
+            return view('user.orderHistory')->with('all',[])
+                ->with('products',[])
+                ->with('sale',[]);
+        }
+
+        $cart=[];
+        $product=[];
+        foreach($res1 as $r )
+        {
+            $totalCart = explode(',',$r->product_id);
+            foreach($totalCart as $c)
+            {
+                $cart[]=array_prepend(explode(':',$c), $r->id);
+                $a=explode(':',$c);
+                $res = Product::find($a[0]);
+                $product[]=$res;
+            }
+        }
+        $res = Product::all();
+        $cat = Category::all();
+
+        return view('store.history')
+            ->with('products', $res)
+            ->with("cat", $cat)
+            ->with('all',$cart)
+            ->with('prods',$product)
+            ->with('sale',$res1);
     }
 
 }
