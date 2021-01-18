@@ -29,7 +29,7 @@ class signupController extends Controller
 
     public function userPosted(Request $r)
     {
-        $u = new User();
+        $u = new user();
         $add = new Address();
         $add->area = $r->address;
         $add->city = $r->city;
@@ -46,7 +46,7 @@ class signupController extends Controller
 
         $u->save();
 
-        $user = User::find($u->id);
+        $user = user::find($u->id);
 
         $r->session()->put('user', $user);
 

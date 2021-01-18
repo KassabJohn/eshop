@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\orderRequest;
 use Illuminate\Support\Facades\DB;
 use App\Product;
+use App\User;
 use App\Category;
 use Session;
 

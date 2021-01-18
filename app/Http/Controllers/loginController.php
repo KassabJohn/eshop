@@ -13,6 +13,7 @@ use App\Product;
 use App\Category;
 
 
+
 class loginController extends Controller
 {
     public function adminIndex()
@@ -21,21 +22,21 @@ class loginController extends Controller
     }
     public function adminLogout()
     {
-        session()->flush();   
+        session()->flush();
     	return redirect()->route('admin.login');
     }
     public function adminPosted(AdminLoginVerifyRequest $request)
-    {  
+    {
         $admin = Admin::where('username',$request->Username)->first();
-        
+
         if($admin==null)
         {
-            
+
             $request->session()->flash('message', 'Invalid Username');
-            
+
             return redirect(route('admin.login'));
         }
-        
+
         else
         {
             if($request->Password==$admin->password)
@@ -44,18 +45,18 @@ class loginController extends Controller
                 //$request->session()->put('username', $request->Username);
                 return redirect()->route('admin.dashboard');
             }
-            
+
             else if($request->Password!=$admin->password)
             {
                 $request->session()->flash('message', 'Invalid Password');
                 return view('admin_panel.adminLogin');
             }
         }
-        
-        
-        
+
+
+
     }
-    
+
     public function userIndex()
     {
         if(session()->has('user')){
@@ -73,14 +74,14 @@ class loginController extends Controller
 
     public function userPosted(UserLoginVerifyRequest $request)
     {
-        $user = User::where('email',$request->email)
+        $user = user::where('email',$request->email)
         ->where('password',$request->pass)
         ->first();
 
         if($user==null)
         {
-            $request->session()->flash('message', 'Invalid User');
-    		
+            $request->session()->flash('message', 'Invalid user');
+
             return redirect()->route('user.login');
         }
         else
