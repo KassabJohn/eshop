@@ -72,5 +72,22 @@ class userController extends Controller
             ->with("a", $category);
     }
 
+    public function post($id,orderRequest $r)
+    {
+        if(!(Session::has('cart')))
+        {
+            Session::put('orderCounter',1);
+            $c=$id.":".$r->quantity.":".$r->color.":".Session::get('orderCounter');
+            Session::put('cart',$c);
+        }
+        else
+        {
+            Session::put('orderCounter',Session::get('orderCounter')+1);
+            $cd=$id.":".$r->quantity.":".$r->color.":".Session::get('orderCounter');
+            $total=Session::get('cart').",".$cd;
+            Session::put('cart',$total);
+        }
+        return redirect()->route('user.home');
+    }
 
 }
