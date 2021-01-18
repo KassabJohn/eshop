@@ -103,6 +103,7 @@ class userController extends Controller
 
         $cart=[];
         $product=[];
+        $id=[];
         foreach($res1 as $r )
         {
             $totalCart = explode(',',$r->product_id);

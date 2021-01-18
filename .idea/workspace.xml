@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/signupController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,19 +151,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-ecommerce-master" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\eshop\resources\views\User" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\eshop\app\Http\Controllers" />
       <recent name="C:\laragon\www\eshop\resources\views\store" />
+      <recent name="C:\laragon\www\eshop\app\Http\Controllers" />
       <recent name="C:\laragon\www\eshop\database\migrations" />
       <recent name="C:\laragon\www\eshop\app\Http\Controllers\user" />
       <recent name="C:\laragon\www\eshop\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\eshop\resources\views\User" />
     </key>
   </component>
   <component name="RunManager">
@@ -192,6 +191,7 @@
       <workItem from="1610812921759" duration="184000" />
       <workItem from="1610890770177" duration="15000" />
       <workItem from="1610891154430" duration="1237000" />
+      <workItem from="1610977102125" duration="519000" />
     </task>
     <servers />
   </component>
@@ -211,11 +211,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2606" y="217" key="FileChooserDialogImpl" timestamp="1610890783294">
+    <state x="2610" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610977276276">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2610" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1610977276276" />
+    <state x="2606" y="217" key="FileChooserDialogImpl" timestamp="1610977482217">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610557737257" />
-    <state x="2606" y="217" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1610890783294" />
+    <state x="2606" y="217" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1610977482217" />
     <state x="794" y="279" width="579" height="534" key="find.popup" timestamp="1610558641974">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
