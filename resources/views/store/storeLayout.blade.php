@@ -57,7 +57,13 @@
         </div>
     </table>
 </header>
+<br>
+<br>
+<br>
+<br>
+
 <ul class="list-group list-group-horizontal">
+
     @if(Route::is('user.search'))
         @foreach($cat as $c)
             <li class="list-group-item"><a href="{{route('user.search.cat',['id'=>$c->id])}}" >{{$c->name}}</a></li>

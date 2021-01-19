@@ -1,22 +1,23 @@
 <?php
 namespace App\Http\Controllers\user;
-use App\sale;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\orderRequest;
 use Illuminate\Support\Facades\DB;
 use App\Product;
-use App\User;
 use App\Category;
+use App\sale;
+use App\User;
+use App\Address;
 use Session;
 
 class userController extends Controller
 {
     public function index()
     {
-    	$res = Product::all();
+        $res = Product::all();
         $cat = Category::all();
-    	return view('store.index')
+        return view('store.index')
             ->with('products', $res)
             ->with("cat", $cat)
             ->with('index', 1);
@@ -29,7 +30,7 @@ class userController extends Controller
         $res1 = Product::all();
         $cat=Category::find($res);
         $colorList = explode(',',$res->colors);
-    	$cat = Category::all();
+        $cat = Category::all();
         return view('store.product')
             ->with('product', $res)
             ->with('products', $res1)
@@ -57,18 +58,18 @@ class userController extends Controller
         }
         else if(isset($category)){
             $sRes = DB::table('products')
-            ->where("category_id" , $category)
-            ->get();
+                ->where("category_id" , $category)
+                ->get();
         }
         else{
             $sRes = DB::table('products')
-            ->get();
+                ->get();
         }
 
         if(!isset($category)) {
             $category = -1;
         }
-    	return view('store.search')
+        return view('store.search')
             ->with('products', $sRes)
             ->with("cat", $cat)
             ->with("a", $category);
@@ -92,6 +93,68 @@ class userController extends Controller
         return redirect()->route('user.home');
     }
 
+    public function cart(Request $r)
+    {
+        $res = Product::all();
+        $cat = Category::all();
+        if(!Session::has('cart'))
+        {
+            return view('store.cart')->with('all',null)
+                ->with('products',[])
+                ->with('products', $res)
+                ->with("cat", $cat);
+        }
+        $cart=[];
+        $product=[];
+        $cost=0;
+        $totalCart = explode(',',Session::get('cart'));
+        foreach($totalCart as $c)
+        {
+            $cart[]=explode(':',$c);
+            $a=explode(':',$c);
+            $res = Product::find($a[0]);
+            $product[]=$res;
+            $cost_after_quantity=$a[1]*$res->discount;
+            $cost+= $cost_after_quantity;
+            Session::put('price',$cost);
+        }
+
+        return view('store.cart')
+            ->with('products', $res)
+            ->with("cat", $cat)
+            ->with('all',$cart)
+            ->with('prod',$product)
+            ->with('total',Session::get('price'));
+    }
+
+
+    public function confirm(Request $r)
+    {
+        if($r->has('order'))
+        {
+            if(Session::has('user'))
+            {
+
+                $sales= new sale();
+                $sales->user_id=session('user')->id;
+                $sales->product_id=session('cart');
+                $sales->order_status='Placed';
+                $sales->price=session('price');
+
+                $sales->save();
+                Session::forget('cart');
+                Session::forget('price');
+                Session::forget('orderCounter');
+                return redirect()->route('user.cart');
+            }
+            else{
+                return redirect()->route('user.cart');
+            }
+
+        }
+
+
+    }
     public function history(Request $r)
     {
         $res1= sale::where('user_id', session('user')->id)->get();
