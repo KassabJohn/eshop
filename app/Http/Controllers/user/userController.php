@@ -7,8 +7,6 @@ use Illuminate\Support\Facades\DB;
 use App\Product;
 use App\Category;
 use App\sale;
-use App\User;
-use App\Address;
 use Session;
 
 class userController extends Controller
@@ -152,9 +150,8 @@ class userController extends Controller
             }
 
         }
-
-
     }
+
     public function history(Request $r)
     {
         $res1= sale::where('user_id', session('user')->id)->get();
@@ -167,7 +164,6 @@ class userController extends Controller
 
         $cart=[];
         $product=[];
-        $id=[];
         foreach($res1 as $r )
         {
             $totalCart = explode(',',$r->product_id);
