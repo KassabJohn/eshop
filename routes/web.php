@@ -39,4 +39,4 @@ Route::post('/delete_item_from_cart', 'user\userController@deleteCartItem')->nam
 
 Route::get('/logout', 'loginController@userLogout')->name('user.logout');
 
-    Route::get('/history', 'user\userController@history')->name('user.history');
+Route::get('/history', 'user\userController@history')->name('user.history');

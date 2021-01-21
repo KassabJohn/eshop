@@ -21,6 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/user/userController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/user/userController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_20_141633_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_141633_create_products_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/history.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +158,7 @@
       <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/laravel/helpers" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mwHRUXDrvZ8kY96b6raqvE4yfP" />
@@ -160,19 +169,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Requests" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\eshop\resources\views\User" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\eshop\resources\views\store" />
       <recent name="C:\laragon\www\eshop\app\Http\Requests" />
+      <recent name="C:\laragon\www\eshop\resources\views\store" />
       <recent name="C:\laragon\www\eshop" />
       <recent name="C:\laragon\www\eshop\app\Http\Controllers" />
       <recent name="C:\laragon\www\eshop\database\migrations" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\eshop\resources\views\User" />
     </key>
   </component>
   <component name="RunManager">
@@ -202,7 +211,9 @@
       <workItem from="1610891154430" duration="1237000" />
       <workItem from="1610977102125" duration="3512000" />
       <workItem from="1611044037491" duration="3751000" />
-      <workItem from="1611132168782" duration="889000" />
+      <workItem from="1611132168782" duration="1597000" />
+      <workItem from="1611157892436" duration="20000" />
+      <workItem from="1611257960729" duration="2965000" />
     </task>
     <servers />
   </component>
@@ -235,10 +246,10 @@
     </state>
     <state x="552" y="222" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610979178736" />
     <state x="2610" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1610977276276" />
-    <state x="2606" y="217" key="FileChooserDialogImpl" timestamp="1610977482217">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1611261030027">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610557737257" />
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1611261030027" />
     <state x="2606" y="217" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1610977482217" />
     <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610978772785">
       <screen x="0" y="0" width="1536" height="834" />
@@ -248,9 +259,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610978772786" />
-    <state x="794" y="279" width="579" height="534" key="find.popup" timestamp="1610558641974">
+    <state x="794" y="279" width="579" height="534" key="find.popup" timestamp="1611261985407">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="794" y="279" width="579" height="534" key="find.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610558641974" />
+    <state x="794" y="279" width="579" height="534" key="find.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1611261985407" />
   </component>
 </project>

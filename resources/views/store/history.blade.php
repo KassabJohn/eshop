@@ -9,7 +9,6 @@
                     <th>Order Id</th>
                     <th>Image </th>
                     <th>Name</th>
-                    <th>Color</th>
                     <th>Status</th>
                     </thead>
                     <tbody>
@@ -23,7 +22,6 @@
                                                 <td>{{$s->id}}</td>
                                                 <td><img src="uploads/products/{{$p->id}}/{{$p->image_name}}" height="10%" width="10%"></td>
                                                 <td>{{$p->name}}</td>
-                                                <td><div style="height:25px;width:25px;margin:5px;display:inline-block;background-color: {{$c[3]}}"></div></td>
                                                 <td>{{$s->order_status}}</td>
                                             </tr>
                                             @break

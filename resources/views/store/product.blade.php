@@ -33,15 +33,11 @@
 
                             </div>
                             <div class="card-footer">
-
-                                @foreach($colors as $c)
-                                    <input type="radio" name="color"  value="{{$c}}">
-                                    <div style="height:25px;width:25px;margin:5px;display:inline-block;background-color: {{$c}}"></div>
-                                    @endforeach
                                     <br>
                                     <button type="submit" name="myButton" id="myButton" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-                                    <small class="text-muted">
+                                <small class="text-muted">
                                         <input type="number" id="quantity" name="quantity" value="1" min="1" max="100" />
+                                </small>
                             </div>
                         </div>
                     </form>

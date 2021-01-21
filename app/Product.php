@@ -15,7 +15,6 @@ class Product extends Model
         'name',
         'image_name',
         'description',
-        'colors',
         'price',
         'discount',
         'tag',
@@ -26,6 +25,6 @@ class Product extends Model
     {
     	return $this->belongsTo('App\Category','category_id','id');
     }
-    
-    
+
+
 }

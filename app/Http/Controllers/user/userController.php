@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\DB;
 use App\Product;
 use App\Category;
 use App\sale;
+use App\User;
+use App\Address;
 use Session;
 
 class userController extends Controller
@@ -27,13 +29,11 @@ class userController extends Controller
         $res = Product::find($id);
         $res1 = Product::all();
         $cat=Category::find($res);
-        $colorList = explode(',',$res->colors);
         $cat = Category::all();
         return view('store.product')
             ->with('product', $res)
             ->with('products', $res1)
-            ->with('cat', $cat)
-            ->with('colors',$colorList);
+            ->with('cat', $cat);
     }
 
     public function search(Request $r){
@@ -78,13 +78,13 @@ class userController extends Controller
         if(!(Session::has('cart')))
         {
             Session::put('orderCounter',1);
-            $c=$id.":".$r->quantity.":".$r->color.":".Session::get('orderCounter');
+            $c=$id.":".$r->quantity.":".Session::get('orderCounter');
             Session::put('cart',$c);
         }
         else
         {
             Session::put('orderCounter',Session::get('orderCounter')+1);
-            $cd=$id.":".$r->quantity.":".$r->color.":".Session::get('orderCounter');
+            $cd=$id.":".$r->quantity.":".Session::get('orderCounter');
             $total=Session::get('cart').",".$cd;
             Session::put('cart',$total);
         }
