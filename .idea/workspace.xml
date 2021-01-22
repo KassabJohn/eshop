@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin_panel/productsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin_panel/productsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductEditVerifyRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductEditVerifyRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/adminLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/adminLayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/adminLogin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/adminLogin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/index.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -216,7 +206,7 @@
       <workItem from="1611257960729" duration="4605000" />
       <workItem from="1611311918826" duration="1151000" />
       <workItem from="1611321236512" duration="796000" />
-      <workItem from="1611346379746" duration="5825000" />
+      <workItem from="1611346379746" duration="6128000" />
     </task>
     <servers />
   </component>
