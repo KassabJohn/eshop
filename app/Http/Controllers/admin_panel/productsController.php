@@ -57,7 +57,6 @@ class productsController extends Controller
                 $prd->category_id = $request->Category;
                 $prd->price = $request->Price;
                 $prd->discount = $request->Discounted_Price;
-                $prd->tag = $request->Tags;
                 $prd->save();
 
 
@@ -118,7 +117,6 @@ class productsController extends Controller
         $prdToUpdate->price = $request->Price;
         $prdToUpdate->discount= $request->Discounted_Price;
         $prdToUpdate->category_id = $request->Category;
-        $prdToUpdate->tag= $request->Tags;
 
         if($request->img!="")
         {

@@ -1,7 +1,10 @@
 @extends('admin_panel.adminLayout') @section('content')
-    <h4>Products Table <a style="float:right;color:white" href="{{route('admin.products.create')}}">+ Add Product</a></h4>
     <br><br>
-        <table>
+    <h4 class="card-title">Products Table<br><br> <a class="btn btn-lg btn-success" href="{{route('admin.products.create')}}">+ Add Product</a></h4>
+    <br><br>
+    <div class="row">
+        <div class="col-10">
+    <table class="table table-striped">
             <thead>
             <tr>
                 <th>
@@ -54,5 +57,8 @@
             @endforeach
             </tbody>
         </table>
+        </div>
+        </div>
+
 @endsection
 

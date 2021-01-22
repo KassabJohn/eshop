@@ -1,7 +1,7 @@
 @extends('admin_panel.adminLayout') @section('content')
 
     <a style="color:green;" href="{{route('admin.products')}}">
-        < Back to List</a>
+        Back to List</a>
     <br>
     <br>
     <h4 >Create product</h4>
@@ -27,7 +27,7 @@
             <label for="Category">Category</label>
             <select id="Category" name="Category">
                 @php foreach($catlist->all() as $cat) {
-                                                echo "<option value=".$cat->id." >".$cat->name." </option>"; $select_attribute=''; } @endphp
+                echo "<option value=".$cat->id." >".$cat->name." </option>"; $select_attribute=''; } @endphp
             </select>
         </div>
         <div>
@@ -38,25 +38,7 @@
             <label  >Product Discounted Price*</label>
             <input type="text" id="Discounted_Price"  name="Discounted_Price" value="">
         </div>
+        </div>
+        <input type="submit" name="saveButton" class="btn btn-success mr-2" id="saveButton" value="Create"  />
     </form>
-
-    @if($errors->any())
-        <ul>
-            @foreach($errors->all() as $err)
-                <tr>
-                    <td>
-                        <li>{{$err}}</li>
-                    </td>
-                </tr>
-            @endforeach
-        </ul>
-        @endif
-        </div>
-        </div>
-        </div>
-
-        </div>
-        </div>
-        </div>
-        </div>
 @endsection

@@ -21,7 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin_panel/productsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin_panel/productsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductEditVerifyRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductEditVerifyRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/adminLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/adminLayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/adminLogin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/adminLogin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +169,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/seeds" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -170,11 +177,11 @@
       <recent name="C:\laragon\www\eshop\resources\views\User" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\eshop\database\seeds" />
+      <recent name="C:\laragon\www\eshop\app\Http\Requests" />
       <recent name="C:\laragon\www\eshop\resources\views" />
       <recent name="C:\laragon\www\eshop\app\Http\Controllers\admin_panel" />
-      <recent name="C:\laragon\www\eshop\app\Http\Requests" />
       <recent name="C:\laragon\www\eshop\resources\views\admin_panel" />
-      <recent name="C:\laragon\www\eshop\resources\views\store" />
     </key>
   </component>
   <component name="RunManager">
@@ -209,7 +216,7 @@
       <workItem from="1611257960729" duration="4605000" />
       <workItem from="1611311918826" duration="1151000" />
       <workItem from="1611321236512" duration="796000" />
-      <workItem from="1611346379746" duration="2299000" />
+      <workItem from="1611346379746" duration="5825000" />
     </task>
     <servers />
   </component>
