@@ -12,6 +12,7 @@
     <br>
     <div id="empty_image"> </div>
     <form method="post"  id="product_form">
+        <div class="form-group">
         @csrf
         <input id="inp_img" name="img" type="hidden" value="">
         <br><br>
@@ -41,4 +42,58 @@
         </div>
         <input type="submit" name="saveButton" class="btn btn-success mr-2" id="saveButton" value="Create"  />
     </form>
+
+    <script>
+
+        function fileChange(e) {
+
+            document.getElementById('inp_img').value = '';
+
+            for (let i = 0; i < e.target.files.length; i++) {
+
+                let file = e.target.files[i];
+
+                if (file.type == "image/jpeg" || file.type == "image/png") {
+
+                    let reader = new FileReader();
+                    reader.onload = function(readerEvent) {
+
+                        let image = new Image();
+                        image.onload = function(imageEvent) {
+
+                            let max_size = 600;
+                            let w = image.width;
+                            let h = image.height;
+
+                            if (w > h) {  if (w > max_size) { h*=max_size/w; w=max_size; }
+                            } else     {  if (h > max_size) { w*=max_size/h; h=max_size; } }
+
+                            let canvas = document.createElement('canvas');
+                            canvas.width = w;
+                            canvas.height = h;
+                            canvas.getContext('2d').drawImage(image, 0, 0, w, h);
+                            if (file.type == "image/jpeg") {
+                                let dataURL = canvas.toDataURL("image/jpeg", 1.0);
+                            } else {
+                                let dataURL = canvas.toDataURL("image/png");
+                            }
+                            document.getElementById('inp_img').value += dataURL + '|';
+                        }
+                        image.src = readerEvent.target.result;
+                    }
+                    reader.readAsDataURL(file);
+
+                    readURL(this);
+                } else {
+                    document.getElementById('inp_files').value = '';
+                    alert('Please only select images in JPG or PNG format.');
+                    return false;
+                }
+            }
+
+        }
+
+        document.getElementById('inp_files').addEventListener('change', fileChange, false);
+
+    </script>
 @endsection

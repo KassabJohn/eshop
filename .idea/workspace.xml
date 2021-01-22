@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="" />
+    <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/create.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,7 +209,7 @@
       <workItem from="1611257960729" duration="4605000" />
       <workItem from="1611311918826" duration="1151000" />
       <workItem from="1611321236512" duration="796000" />
-      <workItem from="1611346379746" duration="6128000" />
+      <workItem from="1611346379746" duration="6819000" />
     </task>
     <servers />
   </component>
@@ -252,9 +255,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610978772786" />
-    <state x="794" y="279" width="579" height="534" key="find.popup" timestamp="1611261985407">
+    <state x="794" y="279" width="579" height="534" key="find.popup" timestamp="1611353192126">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="794" y="279" width="579" height="534" key="find.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1611261985407" />
+    <state x="794" y="279" width="579" height="534" key="find.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1611353192126" />
   </component>
 </project>
