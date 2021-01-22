@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('admin', 'loginController@adminIndex')->name('admin.login');
 Route::post('admin', 'loginController@adminPosted');
 
-Route::group(['middleware' => 'admin'], function() {
 
     Route::get("/admin_panel", 'admin_panel\dashboardController@index')->name('admin.dashboard');
 
@@ -29,8 +28,6 @@ Route::group(['middleware' => 'admin'], function() {
 
     Route::get('/admin_panel/categories/delete/{id}', 'admin_panel\categoriesController@delete')->name('admin.categories.delete');
     Route::post('/admin_panel/categories/delete/{id}', 'admin_panel\categoriesController@destroy');
-});
-
 
     Route::get('/login', 'loginController@userIndex')->name('user.login');
     Route::post('/login', 'loginController@userPosted');
