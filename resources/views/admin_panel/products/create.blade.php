@@ -2,13 +2,16 @@
 
     <a style="color:green;" href="{{route('admin.products')}}">
         Back to List</a>
+    <div class="row">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-8">
     <br>
     <br>
     <h4 >Create product</h4>
     <br>
     <img  id="imageHolder" src="" alt="add image" height="300" width="300"/>
     <br>
-    <input  type="file" name="inp_files" id="inp_files" multiple="multiple" >
+    <input type="file" name="inp_files" id="inp_files" multiple="multiple" >
     <br>
     <div id="empty_image"> </div>
     <form method="post"  id="product_form">
@@ -17,31 +20,45 @@
         <input id="inp_img" name="img" type="hidden" value="">
         <br><br>
         <div>
-            <label  >Product Name*</label>
+            <label class="form-control">Product Name
             <input type="text" id="Name" name="Name"  value="">
+            </label>
+            <br>
         </div>
         <div>
-            <label  for="Description">Product Description*</label>
+            <label  class="form-control" for="Description">Product Description
             <textarea type="textarea" id="Description" name="Description"></textarea>
+            </label>
+            <br>
         </div>
         <div>
-            <label for="Category">Category</label>
+            <label class="form-control" for="Category">Category
             <select id="Category" name="Category">
-                @php foreach($catlist->all() as $cat) {
+                @php
+
+                    foreach($catlist->all() as $cat) {
                 echo "<option value=".$cat->id." >".$cat->name." </option>"; $select_attribute=''; } @endphp
+            </label>
             </select>
+            <br>
         </div>
         <div>
-            <label  >Product Price*</label>
-            <input type="text" name="Price" id="Price" value="">
+            <br>
+            <label class="form-control">Product Price
+            <input type="text" name="Price" id="Price" value=""></label>
         </div>
+            <br>
         <div>
-            <label  >Product Discounted Price*</label>
-            <input type="text" id="Discounted_Price"  name="Discounted_Price" value="">
+            <label class="form-control">Product Discounted Price
+            <input type="text" id="Discounted_Price"  name="Discounted_Price" value=""></label>
         </div>
         </div>
+        <br>
         <input type="submit" name="saveButton" class="btn btn-success mr-2" id="saveButton" value="Create"  />
     </form>
+            </div>
+            </div>
+            </div>
 
     <script>
 

@@ -20,7 +20,7 @@ class CategoriesTableSeeder extends Seeder
             0 =>
             array (
                 'id' => 1,
-                'name' => 'Adenture',
+                'name' => 'Adventure',
                 'type' => 'haha',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
