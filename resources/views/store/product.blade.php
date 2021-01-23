@@ -24,17 +24,18 @@
                         <div class="card">
                             <div class="card-horizontal">
                                 <div class="img-square-wrapper">
-                                    <img class="" src="../uploads/products/{{$product->id}}/{{$product->image_name}}" alt="">
+                                    <img src="../uploads/products/{{$product->id}}/{{$product->image_name}}"  style="width:200px;height:300px" class="card-img-top" alt="{{$product->name}}">
                                 </div>
                                 <div class="card-body">
                                     <h4 class="card-title">{{$product->name}}</h4>
                                     <p class="card-text"><h3>{{$product->discount}} €</h3><h6><del class="product-old-price"><br>{{$product->price}} €</del></h6>
+                                    <p class="card-text">{{$product->description}}</p>
                                 </div>
 
                             </div>
                             <div class="card-footer">
                                     <br>
-                                    <button type="submit" name="myButton" id="myButton" class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                                <button class="btn btn-sm btn-warning" type="submit" name="myButton" id="myButton"><i class="fa fa-shopping-cart"></i> add to cart</button>
                                 <small class="text-muted">
                                         <input type="number" id="quantity" name="quantity" value="1" min="1" max="100" />
                                 </small>

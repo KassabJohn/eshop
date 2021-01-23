@@ -2,6 +2,7 @@
 @section('content')
 
     @if($all != null)
+        <
         <div class="row">
             <div class="row justify-content-md-center">
                 <div class="col-sm-10">
@@ -17,17 +18,20 @@
                                     <tbody>
                                     <tr>
                                         <td>{{$p->name}}</td>
-                                        <td><img src="uploads/products/{{$p->id}}/{{$p->image_name}}" height="50px" width="50px"> {{$p->name}}</td>
-                                        <td><input type="number"  id="quantity" style="width:15%" name={{$p->id}} value={{$c[1]}} min="1" max="100" readonly/></td>
+                                        <td><img src="uploads/products/{{$p->id}}/{{$p->image_name}}" height="50px" width="50px"></td>
+                                        <td><input type="text"  id="quantity" style="width:15%" name={{$p->id}} value={{$c[1]}} readonly/></td>
                                     @break
                                     @endif
                                     @endforeach
                                     @endforeach
                                     </tbody>
                     </table>
+
                     <div class="card text-center">
-                        <div class="card-header">
-                            Cart Validation
+                        <div class="card-header" style="color:red;">
+                            <b>
+                                Cart Summary
+                            </b>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Total :</h5>
@@ -36,7 +40,7 @@
                                 @if($all != null)
                                     <center> <form method="post" name="cart">
                                             @csrf
-                                            <input type="submit" id="confirm_order"  name="order" value="Confirm order">
+                                            <button class="btn btn-sm btn-warning" type="submit" id="confirm_order"  name="order" value="Confirm order">Confirm Order</button>
                                         </form></center>
                                 @endif
                             @endif

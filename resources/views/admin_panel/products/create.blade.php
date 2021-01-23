@@ -13,7 +13,6 @@
                                 <br>
                                 <h4 >Create product</h4>
                                 <br>
-                                <img  id="imageHolder" src="" alt="add image" height="300" width="300"/>
                                 <br>
                                 <input  type="file" name="inp_files" id="inp_files" multiple="multiple" >
                                 <br>
@@ -32,7 +31,7 @@
                                     <br>
                                     <div class="form-group">
                                         <label for="Description">Product Description</label>
-                                        <textarea type="textarea" class="form-control" id="Description" name="Description"></textarea>
+                                        <textarea type="textarea" class="form-control" maxlength="60" id="Description" name="Description"></textarea>
                                     </div>
                                     <br>
                                     <div class="form-group">

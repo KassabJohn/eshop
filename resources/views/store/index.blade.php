@@ -9,8 +9,12 @@
                             <br>
                             <br>
                             <div class="card">
-                                <img src="uploads/products/{{$product->id}}/{{$product->image_name}}" class="card-img-top" alt="...">
-                                <div class="card-body">
+                                <div class="text-center">
+                                <div class="img-thumbnail">
+                                <img src="uploads/products/{{$product->id}}/{{$product->image_name}}" style="width:200px;height:300px" class="card-img-top" alt="{{$product->name}}">
+                                </div>
+                                </div>
+                                    <div class="card-body">
                                     <h6 class="card-title"><b>{{$product->name}}</b></h6>
                                     <h5 class="card-title">{{$product->category->name}}</h5>
                                 </div>
@@ -27,7 +31,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 @endsection
 

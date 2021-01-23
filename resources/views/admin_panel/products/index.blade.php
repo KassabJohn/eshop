@@ -36,7 +36,7 @@
             @foreach($prdlist as $prd)
                 <tr>
                     <td>
-                        <img src="../uploads/products/{{$prd->id}}/{{$prd->image_name}}" style="width:100px;height:100px;border-radius:10%;" alt="">
+                        <img src="../uploads/products/{{$prd->id}}/{{$prd->image_name}}" style="width:20%;height:20%" alt="{{$prd->name}}">
                     </td>
                     <td>
                         <a href="{{route('admin.products.edit', ['id' => $prd->id])}}">{{$prd->name}}</a>

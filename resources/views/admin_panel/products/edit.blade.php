@@ -18,7 +18,7 @@
             <input type="text" id="name" name="Name" value="{{$product->name}}">
         </div>
         <label for="desc">Product Description</label>
-        <textarea type="textarea" name="Description">{{$product->description}}</textarea>
+        <textarea type="textarea" maxlength="60" name="Description">{{$product->description}}</textarea>
         <select id="categ" name="Category">
             @php foreach($catlist->all() as $cat) { if($product->category->id==$cat->id) { $select_attribute='selected'; } echo "
                                                 <option value=".$cat->id." " .$select_attribute.">".$cat->name." </option>"; $select_attribute=''; } @endphp

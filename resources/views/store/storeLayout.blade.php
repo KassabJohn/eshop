@@ -8,7 +8,10 @@
     <title>Eshop</title>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <style>
@@ -62,21 +65,28 @@
 <br>
 <br>
 
-<ul class="list-group list-group-horizontal">
-
+<center>
+<div class="dropdown">
+    <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Search by category
+        <span class="caret"></span></button>
+    <div class="dropdown-menu">
     @if(Route::is('user.search'))
         @foreach($cat as $c)
-            <li class="list-group-item"><a href="{{route('user.search.cat',['id'=>$c->id])}}" >{{$c->name}}</a></li>
+            <li class="dropdown-item"><a href="{{route('user.search.cat',['id'=>$c->id])}}" >{{$c->name}}</a></li>
         @endforeach
+            <li class="dropdown-item"><a href="{{route('user.search')}}">Browse All</a></li>
     @else
         @foreach($cat as $c)
-            <li class="list-group-item"><a href="{{route('user.search.cat',['id'=>$c->id])}}" >{{$c->name}}</a></li>
+            <li class="dropdown-item"><a href="{{route('user.search.cat',['id'=>$c->id])}}" >{{$c->name}}</a></li>
         @endforeach
-        <li class="list-group-item"><a href="{{route('user.search')}}">Browse All</a></li>
+            <li class="dropdown-item"><a href="{{route('user.search')}}">Browse All</a></li>
     @endif
-
-</ul>
+</div>
+</div>
+</center>
+<br>
 @yield('content')
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
