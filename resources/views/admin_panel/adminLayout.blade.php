@@ -9,35 +9,30 @@
 </head>
 <body>
 
-<p class="profile-name">{{session()->get('admin')->name}}</p>
-<div>
-    <small class="designation text-muted">Admin</small>
-    <span class="status-indicator online"></span>
-</div>
-<li class="nav-item {{Route::is('admin.dashboard') ? 'active' : ''}}">
-    <a class="nav-link" href="{{route('admin.dashboard')}}">
-        <i class="menu-icon mdi mdi-television"></i>
-        <span class="menu-title">Dashboard</span>
-    </a>
-</li>
-<li class="nav-item {{Route::is('admin.products') ? 'active' : ''}}">
-    <a class="nav-link" href="{{route('admin.products')}}">
-        <i class="menu-icon mdi mdi-cart-outline"></i>
-        <span class="menu-title">Products</span>
-    </a>
-</li>
-<li class="nav-item {{Route::is('admin.categories') ? 'active' : ''}}">
-    <a class="nav-link" href="{{route('admin.categories')}}">
-        <i class="menu-icon mdi mdi-view-grid"></i>
-        <span class="menu-title">Categories</span>
-    </a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="{{route('admin.orderManagement')}}">
-        <i class="menu-icon mdi mdi-content-paste"></i>
-        <span class="menu-title">Order Management</span>
-    </a>
-</li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href={{route('admin.dashboard')}}>Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href={{route('admin.products')}}>Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href={{route('admin.categories')}}>Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href={{route('admin.orderManagement')}}>Order Management</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Connected to <b>{{session()->get('admin')->name}}</b></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
     @yield('content')
 </body>
 <!-- JavaScript Bundle with Popper -->

@@ -10,13 +10,13 @@
 
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Username" value="john@examle.com" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
 
                     <br>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">🔑</span>
-                        <input type="password" name="pass" id="pass" class="form-control" placeholder="Password" value="12345" aria-label="Password" aria-describedby="basic-addon1">
+                        <input type="password" name="pass" id="pass" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
                     </div>
                     <br>
 

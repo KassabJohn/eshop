@@ -90,6 +90,8 @@ class productsController extends Controller
 
     }
 
+
+
     public function edit($id)
     {
         $cat = Category::all();

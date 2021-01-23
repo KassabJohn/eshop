@@ -1,6 +1,6 @@
 @extends('admin_panel.adminLayout') @section('content')
     <br><br>
-    <h4 class="card-title">Products Table<br><br> <a class="btn btn-lg btn-success" href="{{route('admin.products.create')}}">+ Add Product</a></h4>
+    <h4 class="card-title">Products Table<br><br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn btn-sm btn-primary" href="{{route('admin.products.create')}}">+ Add Product</a></h4>
     <br><br>
     <div class="row">
         <div class="col-10">
