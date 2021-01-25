@@ -2,8 +2,8 @@
 @section('content')
 
     <div class="row">
-        <div class="row justify-content">
-            <div class="col-sm-12">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-4">
                 <br>
                 <form method="post" id="loginForm">
                     @csrf

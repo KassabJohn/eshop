@@ -21,9 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/store/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/products/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,9 +218,6 @@
       <workItem from="1611321236512" duration="796000" />
       <workItem from="1611346379746" duration="6875000" />
       <workItem from="1611432884840" duration="6559000" />
-      <workItem from="1611533647678" duration="1220000" />
-      <workItem from="1611565233046" duration="487000" />
-      <workItem from="1611567450531" duration="357000" />
     </task>
     <servers />
   </component>
