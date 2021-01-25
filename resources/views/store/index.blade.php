@@ -20,7 +20,7 @@
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">{{$product->discount}} €</li>
-                                    <del><li class="list-group-item">{{$product->price}} €</li></del>
+                                    <del><li class="list-group-item" >{{$product->price}} €</li></del>
                                 </ul>
                                 <div class="card-body">
                                     <a href="{{route('user.view',['id'=>$product->id])}}" class="card-link">Game link</a>
