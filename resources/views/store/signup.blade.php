@@ -1,9 +1,8 @@
 @extends('store.storeLayout')
 @section('content')
 
-    <div class="row">
         <div class="row justify-content-md-center">
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <br>
 
                 <form id="signupForm" method="post" >
@@ -53,6 +52,5 @@
 
             </div>
         </div>
-    </div>
 @endsection
 
