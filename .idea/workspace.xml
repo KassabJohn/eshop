@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/login.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,8 @@
       <workItem from="1611321236512" duration="796000" />
       <workItem from="1611346379746" duration="6875000" />
       <workItem from="1611432884840" duration="6559000" />
-      <workItem from="1611578428580" duration="4276000" />
+      <workItem from="1611618376871" duration="9000" />
+      <workItem from="1611618387774" duration="37000" />
     </task>
     <servers />
   </component>
@@ -244,10 +245,10 @@
     </state>
     <state x="552" y="222" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610979178736" />
     <state x="2610" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1610977276276" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1611435689682">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1611618382941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1611435689682" />
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1611618382941" />
     <state x="2606" y="217" key="FileChooserDialogImpl/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1610977482217" />
     <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1610978772785">
       <screen x="0" y="0" width="1536" height="834" />

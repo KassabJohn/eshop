@@ -2,7 +2,7 @@
 @section('content')
 
         <div class="row justify-content-md-center">
-            <div class="col-sm-8">
+            <div class="col-sm-4">
                 <br>
 
                 <form id="signupForm" method="post" >
@@ -49,7 +49,6 @@
 
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
-
             </div>
         </div>
 @endsection

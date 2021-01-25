@@ -1,9 +1,6 @@
 @extends('admin_panel.adminLayout') @section('content')
-    <div class="row justify-content-md-center">
-        <div class="col-sm-8">
                         <h4>Orders</h4>
-
-                        <table class="table">
+                            <table>
                                 <thead>
                                 <tr>
                                     <th>
@@ -33,6 +30,4 @@
                                 @endforeach
                                 </tbody>
                             </table>
-        </div>
-        </div>
 @endsection
