@@ -15,7 +15,7 @@
                 </form>
             </div>
         </div>
-        
+
         <h4>Categories Table</h4>
         <table class="table table-bordered">
             <thead>

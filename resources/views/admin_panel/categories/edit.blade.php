@@ -3,6 +3,7 @@
     <h4>Edit Category</h4>
     <br>
     <form method="post"  id="cat_form">
+        <div class="form-group">
         @csrf
         <label for="categoryname">Category Name</label>
         <input type="text" id="Name" name="Name" value="{{$category->name}}">
@@ -11,5 +12,6 @@
             <textarea type="textarea" id="Type" name="Type" >{{$category->type}}</textarea>
         </div>
         <input  type="submit" name="updateButton" id="updateButton" value="UPDATE" />
+        </div>
     </form>
 @endsection
