@@ -1,5 +1,9 @@
 @extends('admin_panel.adminLayout') @section('content')
-    <table>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+    <table class="table table-bordered">
         <thead>
         <tr>
             <th>
@@ -71,7 +75,7 @@
                                                     @endif
                                                 @endforeach
                                             </select>
-                                            <input type="submit" value="Update">
+                                            <button type="submit" value="Update" class="btn btn-success btn-sm"> Update </button>
                                         </form>
                                     </td>
                                     @break
