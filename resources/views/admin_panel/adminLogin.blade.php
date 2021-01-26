@@ -9,12 +9,24 @@
 </head>
 
 <body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="row justify-content-md-center">
+    <div class="col-sm-4">
         <div class="form" >
             <form method="post">
             @csrf
+                <div class="form-group">
                 <input type="text" name="Username" id="Username" placeholder="username" value="admin"/>
                 <input type="password" name="Password" id="Password" placeholder="password" value="12345" />
-                <input type="submit" name="loginButton" id="loginButton" value="LOGIN" />
+                    <button type="submit" class="btn btn-sm btn-warning" type="submit" name="loginButton" id="loginButton" value="LOGIN">Login </button>
+                </div>
             </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
