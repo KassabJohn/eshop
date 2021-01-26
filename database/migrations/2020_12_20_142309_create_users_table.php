@@ -19,7 +19,8 @@ class CreateUsersTable extends Migration
             $table->text('email');
             $table->text('password');
             $table->text('phone');
-            $table->text('prev_password')->nullable();
+            $table->text('city');
+            $table->integer('zip');
             $table->integer('address_id')->unsigned();
             $table->foreign('address_id')
                 ->references('id')->on('addresses')

@@ -15,7 +15,10 @@
                     Name
                 </th>
                 <th>
-                    Adress
+                    Delivery Address
+                </th>
+                <th>
+                    ZIP
                 </th>
                 <th>
                     Product Name
@@ -49,7 +52,8 @@
                                         @foreach($users as $u)
                                             @if($u->id == $s->user_id)
                                                 <td>{{$u->full_name}}</td>
-                                                <td>{{$u->city}}, {{$u->zip}}</td>
+                                                <td>{{$u->city}}</td>
+                                                <td>{{$u->zip}}</td>
                                                 @break
                                             @endif
                                         @endforeach
