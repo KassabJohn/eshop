@@ -49,10 +49,10 @@
                     {{$cat->updated_at}}
                 </td>
                 <td>
-                    <a href="{{route('admin.categories.edit', ['id' => $cat->id])}}" class="btn btn-warning">Edit</a>
+                    <a href="{{route('admin.categories.edit', ['id' => $cat->id])}}" class="btn btn-sm btn-warning">Edit</a>
                 </td>
                 <td>
-                    <a href="{{route('admin.categories.delete', ['id' => $cat->id])}}" onclick="delete()">Delete</a>
+                    <a href="{{route('admin.categories.delete', ['id' => $cat->id])}}" class="btn btn-sm btn-danger" onclick="delete()">Delete</a>
                 </td>
             </tr>
         @endforeach
