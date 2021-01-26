@@ -1,14 +1,20 @@
 @extends('admin_panel.adminLayout') @section('content')
-
-    <a href="{{route('admin.categories')}}"> < Back to List</a>
+<center>
+    <div class="row justify-content-md-center">
+        <div class="col-sm-4">
+            <a class="font-monospace" href="{{route('admin.categories')}}">Back to List</a><br><br>
     <form method="post">
         @csrf
-        <label for="categoryname">Category Name</label>
-        <input type="text" id="name" name="Name" value="{{$category->name}}" disabled>
+        <label for="categoryname">Category Name</label><br><br>
+        <input type="text" id="name" class="form-control" name="Name" value="{{$category->name}}" disabled>
         <div>
-            <label for="categorytype">Category Type</label>
-            <textarea type="textarea" name="Type" disabled>{{$category->type}}</textarea>
-        </div>
-        <input  type="submit" name="updateButton" id="updateButton" value="DELETE" />
+            <label for="categorytype">Category Type</label><br><br>
+            <textarea type="textarea" class="form-control" name="Type" disabled>{{$category->type}}</textarea>
+        </div><br>
+        <button class="btn btn-sm btn-danger"  type="submit" name="updateButton" id="updateButton" value="DELETE" >Delete</button>
     </form>
+        </div>
+        </div>
+</center>
+
 @endsection
