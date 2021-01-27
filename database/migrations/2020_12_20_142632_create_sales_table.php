@@ -22,6 +22,7 @@ class CreateSalesTable extends Migration
             $table->text('product_id');
             $table->text('order_status');
             $table->bigInteger('price');
+
             $table->timestamps();
         });
     }

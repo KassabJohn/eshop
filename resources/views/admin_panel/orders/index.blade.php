@@ -18,6 +18,9 @@
                     Delivery Address
                 </th>
                 <th>
+                    City
+                </th>
+                <th>
                     ZIP
                 </th>
                 <th>
@@ -52,6 +55,7 @@
                                         @foreach($users as $u)
                                             @if($u->id == $s->user_id)
                                                 <td>{{$u->full_name}}</td>
+                                                <td>{{$u->area}}</td>
                                                 <td>{{$u->city}}</td>
                                                 <td>{{$u->zip}}</td>
                                                 @break

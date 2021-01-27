@@ -44,6 +44,7 @@ class signupController extends Controller
         $u->address_id = $add_id;
         $u->phone = $r->tel;
         $u->city = $add->city;
+        $u->area = $r->address;
         $u->zip = $add->zip;
 
         $u->save();

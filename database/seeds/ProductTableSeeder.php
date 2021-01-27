@@ -76,7 +76,7 @@ array (
 5 =>
 array (
 'id' => 6,
-'name' => '>DBLegends',
+'name' => 'DBLegends',
 'image_name' => '1.jpg',
 'description' => 'gokuuu',
 'price' => 99,
