@@ -35,8 +35,6 @@ class categoriesController extends Controller
 
     public function edit($id)
     {
-
-
         $cat = Category::find($id);
 
         return view('admin_panel.categories.edit')

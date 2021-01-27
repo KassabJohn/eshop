@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers\user;
+use App\Http\Requests\UserSignup2VerifyRequest;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\orderRequest;
@@ -21,6 +22,33 @@ class userController extends Controller
             ->with('products', $res)
             ->with("cat", $cat)
             ->with('index', 1);
+
+    }
+
+    public function edit(User $user)
+    {
+        return view('store.edit')->with([
+            'user' => $user
+        ]);
+    }
+
+
+    public function update(Request $request, User $user)
+    {
+        $request->validate([
+            'full_name' => 'required',
+            'email' => 'required',
+            'password' => 'required',
+            'phone' => 'required',
+            'area' => 'required',
+            'city' => 'required',
+            'zip' => 'required'
+        ]);
+
+        $user->update($request->all());
+
+        return redirect()->route('user.logout')
+            ->with('success','User modifié avec succès');
     }
 
     public function view($id)
@@ -154,6 +182,7 @@ class userController extends Controller
 
     public function history(Request $r)
     {
+        $user = User::where('id', session('user')->id)->get();
         $res1= sale::where('user_id', session('user')->id)->get();
         if(!$res1)
         {
@@ -183,7 +212,8 @@ class userController extends Controller
             ->with("cat", $cat)
             ->with('all',$cart)
             ->with('prods',$product)
-            ->with('sale',$res1);
+            ->with('sale',$res1)
+            ->with('user', $user);
     }
 
 }

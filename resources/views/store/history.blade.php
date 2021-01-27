@@ -1,6 +1,5 @@
 @extends('store.storeLayout')
 @section('content')
-
     <div class="row justify-content-md-center">
         <div class="col-md-10">
             <table class="table table-striped">
@@ -24,7 +23,6 @@
                                             <td>{{$p->description}}</td>
                                             <td>{{$s->order_status}}</td>
                                         </tr>
-
                                         @break
                                     @endif
                                 @endif
@@ -36,5 +34,9 @@
             </table>
         </div>
     </div>
-
+    @foreach ($user as $u)
+        <tr>
+            <td>{{ $u->full_name }}</td>
+    <a class="btn btn-primary btn-sm" href="{{ route('user.edit',$u->id) }}">Editer</a><br><br>
+    @endforeach
 @endsection
