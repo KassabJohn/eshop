@@ -42,11 +42,6 @@
                         <input type="password" class="form-control" name="pass" id="pass" placeholder="Password"required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Confirm Password</label>
-                        <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
-                    </div>
-
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>

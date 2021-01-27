@@ -24,7 +24,7 @@
         <br>
         <div class="container">
 
-            <form action="{{ route('user.update',$user->id) }}" method="POST">
+            <form action="{{ route('user.update',$user->id) }}" method="POST"><br><br>
                 <div class="form-group">
                     @csrf
                     @method('PUT')
