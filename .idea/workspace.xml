@@ -21,11 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin_panel/categoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin_panel/categoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/user/userController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/user/userController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/store/history.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/history.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +165,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../restaurant" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -222,6 +221,7 @@
       <workItem from="1611647704811" duration="1422000" />
       <workItem from="1611663174480" duration="7330000" />
       <workItem from="1611751804419" duration="9276000" />
+      <workItem from="1611780978103" duration="1660000" />
     </task>
     <servers />
   </component>
