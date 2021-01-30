@@ -1,6 +1,6 @@
 @extends('admin_panel.adminLayout') @section('content')
     <br><br>
-    <h4 class="card-title">User Table<br><br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a class="btn btn-sm btn-primary" href="{{route('admin.user.create')}}">+ Add User</a></h4>
+    <h4 class="card-title">User Table<br><br>
     <br><br>
     <div class="row">
         <div class="col-10">
@@ -35,6 +35,9 @@
                 <th>
                     Zip
                 </th>
+                <th>
+                    Action
+                </th>
 
             </tr>
             </thead>
@@ -67,6 +70,9 @@
                     </td>
                     <td>
                         {{$u->zip}}
+                    </td>
+                    <td>
+                        <button><a href="{{route('admin.user.edit', ['id' => $u->id])}}">Edit</a></button>
                     </td>
                 </tr>
             @endforeach

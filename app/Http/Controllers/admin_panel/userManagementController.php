@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers\admin_panel;
 
+use App\Category;
+use App\Product;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductVerifyRequest;
+use function GuzzleHttp\Promise\all;
 
 
 class userManagementController extends Controller
@@ -36,6 +39,19 @@ class userManagementController extends Controller
         return redirect()->route('admin.user');
     }
 
+    public function edit($id)
+    {
+        $cat = Category::all();
+        $prd = Product::find($id);
+        $user = User::find($id);
+
+        return view('admin_panel.user.edit')
+            -> with('user', $user)
+            ->with('product', $prd)
+            ->with('catlist', $cat)
+            ->with('select_attribute', '');
+
+    }
 
     public function update(Request $request, User $user)
     {
