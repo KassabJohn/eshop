@@ -17,7 +17,7 @@
 <body>
 <br>
 <center>
-    <div class="col-md-8">
+    <div class="col-md-6">
         <div class="float-left">
             <a class="btn btn-outline-primary" href="{{ route('user.history') }}">Retour</a>
         </div>
@@ -28,10 +28,7 @@
                 <div class="form-group">
                     @csrf
                     @method('PUT')
-                    <div class="form-group">
-                        <label for="full_name">Full name:</label>
-                        <input  type="text" class="form-control" id="comment" name="comment" placeholder="Comment" value="{{ $user->comment }}" required>
-                    </div>
+
 
                     <div class="form-group">
                         <label for="full_name">Full name:</label>
@@ -67,6 +64,11 @@
                     <div class="form-group">
                         <label for="zip">ZIP:</label>
                         <input type="text" class="form-control" id="zip" name="zip" placeholder="Zip" value="{{ $user->zip }}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comment">LEAVE A COMMENT ON OUR WEBSITE:</label>
+                        <input  type="text" class="form-control" id="comment" name="comment" placeholder="Comment" value="{{ $user->comment }}">
                     </div>
 
                     <button type="submit" class="btn btn-primary">Submit</button>
