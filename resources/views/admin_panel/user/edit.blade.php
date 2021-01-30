@@ -46,7 +46,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="comment">LEAVE A COMMENT ON OUR WEBSITE:</label>
+                            <label for="comment">Commentary:</label>
                             <input  type="text" class="form-control" id="comment" name="comment" placeholder="Comment" value="{{ $user->comment }}">
                         </div>
 <br>

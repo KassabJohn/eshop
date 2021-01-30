@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/adminLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/adminLayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/user/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/user/delete.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/user/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin_panel/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin_panel/user/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +223,7 @@
       <workItem from="1611790180066" duration="275000" />
       <workItem from="1611870609412" duration="237000" />
       <workItem from="1612010991596" duration="3191000" />
-      <workItem from="1612025529697" duration="10844000" />
+      <workItem from="1612025529697" duration="11191000" />
     </task>
     <servers />
   </component>

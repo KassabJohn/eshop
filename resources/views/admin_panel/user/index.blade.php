@@ -73,7 +73,7 @@
                     </td>
                     <td>
                         <a class="btn btn-primary" href="{{route('admin.user.edit', ['id' => $u->id])}}">Edit</a>
-                        <a class="btn btn-primary" href="{{route('admin.user.edit', ['id' => $u->id])}}">Delete</a>
+                        <a class="btn btn-danger" href="{{route('admin.user.delete', ['id' => $u->id])}}">Delete</a>
                     </td>
                 </tr>
             @endforeach
