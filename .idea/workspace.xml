@@ -21,16 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="00b37a2e-ff4f-4557-8d20-008edc58bbec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/admin_panel/productsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/admin_panel/productsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/user/userController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/user/userController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_20_141633_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_20_141633_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ProductTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products/10/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/products/10/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products/7/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products/8/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/products/8/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/products/9/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/products/9/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_20_142309_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_20_142309_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/store/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store/storeLayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +229,7 @@
       <workItem from="1611790180066" duration="275000" />
       <workItem from="1611870609412" duration="237000" />
       <workItem from="1612010991596" duration="3191000" />
+      <workItem from="1612025529697" duration="6694000" />
     </task>
     <servers />
   </component>
@@ -277,14 +276,14 @@
     </state>
     <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1610978772786" />
     <state x="2036" y="117" width="1688" height="816" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611666606444" />
-    <state x="921" y="288" width="579" height="534" key="find.popup" timestamp="1612011303024">
+    <state x="403" y="64" width="1097" height="758" key="find.popup" timestamp="1612027920047">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="921" y="288" width="579" height="534" key="find.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1612011303024" />
+    <state x="403" y="64" width="1097" height="758" key="find.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1612027920047" />
     <state x="2670" y="108" width="724" height="816" key="find.popup/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1611752160268" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1611435462300">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1612026753306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1611435462300" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1612026753306" />
   </component>
 </project>

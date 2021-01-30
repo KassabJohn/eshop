@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->text('phone');
             $table->text('area');
             $table->text('city');
+            $table->text('comment')->nullable();
             $table->integer('zip');
             $table->integer('address_id')->unsigned();
             $table->foreign('address_id')

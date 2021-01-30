@@ -16,6 +16,7 @@ class User extends Model
         'email',
         'password',
         'phone',
+        'comment',
         'address',
         'city',
         'zip',

@@ -28,6 +28,10 @@
                 <div class="form-group">
                     @csrf
                     @method('PUT')
+                    <div class="form-group">
+                        <label for="full_name">Full name:</label>
+                        <input  type="text" class="form-control" id="comment" name="comment" placeholder="Comment" value="{{ $user->comment }}" required>
+                    </div>
 
                     <div class="form-group">
                         <label for="full_name">Full name:</label>

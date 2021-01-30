@@ -61,3 +61,5 @@ Route::get('/history', 'user\userController@history')->name('user.history');
 
 Route::get('/edit/{user}', 'user\userController@edit')->name('user.edit');
 Route::put('{user}', 'user\userController@update')->name('user.update');
+
+Route::get('/comment', 'user\userController@comment')->name('user.comment');

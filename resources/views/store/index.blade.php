@@ -16,11 +16,22 @@
         }
 
     </style>
+
+<center>
+    <div class="card border-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header">See all the comments</div>
+        <div class="card-body text-dark">
+            <h5 class="card-title"><a href="{{route('user.comment')}}">💬 💬 💬 💬 💬 💬 💬 </a></h5>
+        </div>
+    </div>
+</center>
+
     <div class="section">
         <div class="container">
             <div class="pagination  pagination-lg ">
                 {{ $products->links() }}
             </div>
+
             <div class="col-md-12">
                 <div class="row">
                     @foreach($products as $product)

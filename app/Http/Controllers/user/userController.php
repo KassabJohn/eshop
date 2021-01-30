@@ -16,22 +16,34 @@ class userController extends Controller
 {
     public function index()
     {
+        $user = User::all();
         $res = Product::paginate(4);
         $cat = Category::all();
         return view('store.index')
             ->with('products', $res)
             ->with("cat", $cat)
-            ->with('index', 1);
+            ->with('index', 1)
+            ->with('user', $user);
+    }
 
+    public function comment()    {
+        $user = User::all();
+        $res = Product::paginate(4);
+        $cat = Category::all();
+        return view('store.comment')
+            ->with('products', $res)
+            ->with("cat", $cat)
+            ->with('index', 1)
+            ->with('user', $user);
     }
 
     public function edit(User $user)
     {
-        return view('store.edit')->with([
+        return view('store.edit')
+            ->with([
             'user' => $user
         ]);
     }
-
 
     public function update(Request $request, User $user)
     {
@@ -41,6 +53,7 @@ class userController extends Controller
             'password' => 'required',
             'phone' => 'required',
             'area' => 'required',
+            'comment',
             'city' => 'required',
             'zip' => 'required'
         ]);
