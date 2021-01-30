@@ -21,7 +21,7 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'name' => 'Adventure',
-                'type' => 'haha',
+                'type' => 'Pegi 3',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
@@ -29,7 +29,7 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'name' => 'Arcade',
-                'type' => 'hehe',
+                'type' => 'Pegi 7',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
@@ -37,7 +37,7 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 3,
                 'name' => 'Car',
-                'type' => 'huhu',
+                'type' => 'Pegi 3',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
@@ -45,55 +45,55 @@ class CategoriesTableSeeder extends Seeder
             array (
                 'id' => 4,
                 'name' => 'FPS',
-                'type' => 'hihi',
+                'type' => 'Pegi 18',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
             4 =>
             array (
                 'id' => 5,
-                'name' => 'TPS',
-                'type' => 'ihih',
+                'name' => 'Moto',
+                'type' => 'Pegi 12',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
             5 =>
             array (
                 'id' => 6,
-                'name' => 'Battle',
-                'type' => 'ehe',
+                'name' => 'Battle Royal',
+                'type' => 'Pegi 12',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
             6 =>
             array (
                 'id' => 7,
-                'name' => 'Test1',
-                'type' => 'test1',
+                'name' => 'FootBall',
+                'type' => 'Pegi 3',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
             7 =>
             array (
                 'id' => 8,
-                'name' => 'test2',
-                'type' => 'ez',
+                'name' => 'BasketBall',
+                'type' => 'Pegi 3',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
             8 =>
             array (
                 'id' => 9,
-                'name' => 'Test3',
-                'type' => 'Test3',
+                'name' => 'Combat',
+                'type' => 'Pegi 18',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),
             9 =>
             array (
                 'id' => 10,
-                'name' => 'Test4',
-                'type' => 'Test4',
+                'name' => 'Society game',
+                'type' => 'Pegi 3',
                 'created_at' => '2021-01-02',
                 'updated_at' => '2021-01-02',
             ),

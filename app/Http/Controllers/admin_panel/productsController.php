@@ -59,8 +59,6 @@ class productsController extends Controller
                 $prd->discount = $request->Discounted_Price;
                 $prd->save();
 
-
-
                 $img[$i] = str_replace(' ', '+', $img[$i]);
                 $data = base64_decode($img[$i]);
 
@@ -78,19 +76,12 @@ class productsController extends Controller
                         echo '<p>Image $i could not be saved.</p>';
                     }
                 }
-
-
-
             }
-
             return redirect()->route('admin.products');
         } catch (\Throwable $th) {
             dd($th->getMessage());
         }
-
     }
-
-
 
     public function edit($id)
     {

@@ -16,7 +16,7 @@ class userController extends Controller
 {
     public function index()
     {
-        $res = Product::all();
+        $res = Product::paginate(4);
         $cat = Category::all();
         return view('store.index')
             ->with('products', $res)
