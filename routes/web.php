@@ -63,3 +63,12 @@ Route::get('/edit/{user}', 'user\userController@edit')->name('user.edit');
 Route::put('{user}', 'user\userController@update')->name('user.update');
 
 Route::get('/comment', 'user\userController@comment')->name('user.comment');
+
+
+Route::get('/admin_panel/user', 'admin_panel\userManagementController@index')->name('admin.user');
+Route::get('/admin_panel/user/create', 'admin_panel\userManagementController@create')->name('admin.user.create');
+Route::post('/admin_panel/user/create', 'admin_panel\userManagementController@store');
+Route::get('/admin_panel/user/edit/{id}', 'admin_panel\userManagementController@edit')->name('admin.user.edit');
+Route::post('/admin_panel/user/edit/{id}', 'admin_panel\userManagementController@update');
+Route::get('/admin_panel/user/delete/{id}', 'admin_panel\userManagementController@delete')->name('admin.user.delete');
+Route::post('/admin_panel/user/delete/{id}', 'admin_panel\userManagementController@destroy');
