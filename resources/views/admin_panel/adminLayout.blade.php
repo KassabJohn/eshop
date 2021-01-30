@@ -26,6 +26,9 @@
                 <a class="nav-link" href={{route('admin.orderManagement')}}>Order Management</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href={{route('admin.user')}}>User Management</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link disabled" href="#">Connected to <b>{{session()->get('admin')->name}}</b></a>
             </li>
         </ul>

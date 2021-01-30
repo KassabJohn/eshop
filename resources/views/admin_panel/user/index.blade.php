@@ -72,7 +72,8 @@
                         {{$u->zip}}
                     </td>
                     <td>
-                        <button><a href="{{route('admin.user.edit', ['id' => $u->id])}}">Edit</a></button>
+                        <a class="btn btn-primary" href="{{route('admin.user.edit', ['id' => $u->id])}}">Edit</a>
+                        <a class="btn btn-primary" href="{{route('admin.user.edit', ['id' => $u->id])}}">Delete</a>
                     </td>
                 </tr>
             @endforeach
